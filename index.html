@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Atividades por bimestre</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+	<style type="text/css">
+		:root {
+			--cor0: #8DB6D9;
+			--cor1: #BCD9EC;
+			--cor2: #E7FFF6;
+			--cor3: #CDF6E8;
+			--cor4: #AAF0D2;
+		}
+
+		table {
+			width: 800px;
+			font-size: 1.3em;
+			margin-top: 20px;
+		}
+
+		table, td, th {
+			border: 1px solid Black;
+			text-align: center;
+		}
+
+		table.atividades {
+			font-family: 'Roboto Slab';
+			border-collapse: collapse;
+			border: 3px solid Black;
+		}
+
+		table.atividades th {
+			font-weight: 600;
+		}
+
+		table.atividades thead tr {
+			background-color: var(--cor0);
+		}
+
+		table.atividades tbody:nth-of-type(1) tr {
+			background-color: var(--cor1);
+		}
+
+		table.atividades tbody:nth-of-type(2) tr {
+			background-color: var(--cor2);
+		}
+
+		table.atividades tbody:nth-of-type(3) tr {
+			background-color: var(--cor3);
+		}
+
+		table.atividades tbody:nth-of-type(4) tr {
+			background-color: var(--cor4);
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>Tabela mesclada</caption>
+		<tr>
+			<td>1</td>
+			<td colspan="2" rowspan="2">2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+	</table>
+	<table class="atividades">
+		<caption>Atividades por bimestre</caption>
+		<thead>
+			<tr>
+				<th scope="col">Bimestres</th>
+				<th scope="col">Questionários</th>
+				<th scope="col">Entregas de projeto</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row" rowspan="4">1º</th>
+				<td>[S0] Questionário - Múltipla escolha</td>
+				<td rowspan="4">Entrega 1</td>
+			</tr>
+			<tr>
+				<td>[S1] Questionário - Múltipla escolha</td>
+			</tr>
+			<tr>
+				<td>[S1] Questionário - Questões abertas</td>
+			</tr>
+			<tr>
+				<td>[S2] Questionário - Questões abertas</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th scope="row" rowspan="4">2º</th>
+				<td>[S2] Questionário - Múltipla escolha</td>
+				<td rowspan="2">Entrega 2</td>
+			</tr>
+			<tr>
+				<td>[S3] Questionário - Múltipla escolha</td>
+			</tr>
+			<tr>
+				<td>[S3] Questionário - Questões abertas</td>
+				<td rowspan="2">Entrega 3</td>
+			</tr>
+			<tr>
+				<td>[S4] Questionário - Questões abertas</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th scope="row" rowspan="4">3º</th>
+				<td>[S4] Questionário - Múltipla escolha</td>
+				<td rowspan="2">Entrega 4</td>
+			</tr>
+			<tr>
+				<td>[S5] Questionário - Múltipla escolha</td>
+			</tr>
+			<tr>
+				<td>[S5] Questionário - Questões abertas</td>
+				<td rowspan="2">Entrega 5</td>
+			</tr>
+			<tr>
+				<td>[S6] Questionário - Questões abertas</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th scope="row" rowspan="2">4º</th>
+				<td>[S6] Questionário - Múltipla escolha</td>
+				<td>Entrega 6</td>
+			</tr>
+			<tr>
+				<td>[S7] Questionário - Questões abertas</td>
+				<td>Entrega 7</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
